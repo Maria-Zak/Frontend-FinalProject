@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.list-style {
+  list-style: none;
+}
+.list-style2{
+    list-style: square;
+}
+
+* {
+  font-family: "calibri";
+  font-size: 23px;
+}
+
+.titel {
+    height: 70vh;
+  background-image: url("/assets/img/fotographer/photographer_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo{
+    height: 100vh;
+  background-image: url("/assets/img/fotographer/photographer_2.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-position: center;
+}
+
+.about-us{
+    font-family: 'Pacifico', cursive;
+    font-size: 75px;
+}
