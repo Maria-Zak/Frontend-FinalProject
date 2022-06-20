@@ -1,3 +1,14 @@
+.container {
+    color: rgb(52, 78, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
 .hero-contact {
     background-image: url(https://cdn.pixabay.com/photo/2012/11/24/07/26/photographer-67127_1280.jpg);
     background-size: cover;
@@ -13,9 +24,20 @@
     color: #fff;
     max-width: 150px;
     transition: all 0.2s linear;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-style:hover {
     background: rgb(58, 90, 64);
     color: #fff;
+}
+
+.input {
+    width: 30vw;
+}
+
+.textarea {
+    width: 30vw;
 }

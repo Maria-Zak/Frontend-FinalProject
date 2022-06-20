@@ -1,19 +1,19 @@
 <div class="hero-contact">
 
 </div>
+<h1 class="heading">Contact us</h1>
 <div class="container">
-    <h1>Contact us</h1>
+
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <label for="name">Name</label><br>
-        <input style="width: 100%;" type="text" placeholder="Enter name" formControlName="name"><br>
+        <input class="input" type="text" placeholder="Enter name" formControlName="name"><br>
         <label for="address">Address</label><br>
-        <input style="width: 100%;" type="text" placeholder="Enter address" formControlName="address"><br>
+        <input class="input" type="text" placeholder="Enter address" formControlName="address"><br>
         <label for="email">Email</label><br>
-        <input style="width: 100%;" type="text" placeholder="email@example.com" formControlName="email"><br>
-
+        <input class="input" type="text" placeholder="email@example.com" formControlName="email"><br>
         <label for="message">Message</label>
         <br>
-        <textarea name="message" cols="30" rows="5"></textarea><br>
+        <textarea class="textarea" name="message" cols="30" rows="5"></textarea><br>
         <input type="submit" value="Submit" class="btn btn-style ">
     </form>
 </div>
