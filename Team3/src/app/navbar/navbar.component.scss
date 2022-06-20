@@ -6,14 +6,16 @@
 
 a {
     color: $hunterGreen;
-    font-weight: bold;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    --bs-navbar-active-color: $hunterGreen;
+   
 }
 
 .brand {
     font-family: $font;
     font-size: 4rem;
-    color: $pastelGreen
+    color: $pastelGreen;
+    text-decoration: none;
 }
 
 .logo {
