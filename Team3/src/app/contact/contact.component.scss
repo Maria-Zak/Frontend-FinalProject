@@ -1,3 +1,4 @@
+@import "../../styles.scss";
 .container {
     color: rgb(52, 78, 65);
     display: flex;
@@ -14,24 +15,6 @@
     background-size: cover;
     height: 70vh;
     background-position: center;
-}
-
-.btn-style {
-    text-decoration: none;
-    padding: 10px 10px;
-    background: rgb(218, 215, 205);
-    margin: 10px auto;
-    color: #fff;
-    max-width: 150px;
-    transition: all 0.2s linear;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.btn-style:hover {
-    background: rgb(58, 90, 64);
-    color: #fff;
 }
 
 .input {
