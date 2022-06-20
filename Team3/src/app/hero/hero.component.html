@@ -1,30 +1,31 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade carousel-home" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="5000">
-        <img src="/assets/img/carousel/wedding.jpg" class="d-block w-100 img" alt="picture of married couple">
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="/assets/img/carousel/portrait.jpg" class="d-block w-100 img" alt="portrait of women in winter">
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="/assets/img/carousel/friends.jpg" class="d-block w-100 img" alt="friends in sunflower field">
-      </div>
-      <div class="carousel-item position-relative " data-bs-interval="5000">
-        <img src="/assets/img/carousel/lenses.jpg" class="d-block w-100 img" alt="camera with lenses">
-        <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-center ">
-            <h5>Want to learn photography?</h5>
-            <p>Start now and check out my upcoming courses.</p>
-            <button type="button" class="btn btn-light">See courses</button>
-        </div>
-    
-      </div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade carousel-outside" data-bs-ride="carousel">
+  <div class="carousel-inner carousel-inside">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="/assets/img/carousel/wedding.jpg" class="d-block w-100 img" alt="picture of married couple">
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="/assets/img/carousel/portrait.jpg" class="d-block w-100 img" alt="portrait of women in winter">
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="/assets/img/carousel/friends.jpg" class="d-block w-100 img" alt="friends in sunflower field">
+    </div>
+    <div class="carousel-item position-relative " data-bs-interval="5000">
+      <img src="/assets/img/carousel/lenses.jpg" class="d-block w-100 img" alt="camera with lenses">
+      <div class="d-none d-md-block position-absolute top-50 start-50 translate-middle text-center carousel-caption align-content-center">
+        <h5 class="display-5 fw-bold">Want to learn photography?</h5>
+        <p class="h3">Start <span class="text-uppercase">now</span> and check out my upcoming courses.</p>
+        <button type="button" class="btn mt-3 btn-green">See courses</button>
+        
+      </div>
+      <button type="button" class="btn mt-3 d-block d-md-none position-absolute top-50 start-50 translate-middle btn-green">Check out my courses</button>
+    </div>
   </div>
+  <button class="carousel-control-prev carousel-btns" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next carousel-btns" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

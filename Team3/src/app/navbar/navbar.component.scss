@@ -1,21 +1,30 @@
 @import "../../styles";
 
-.nav-bar {
+nav {
     background-color: $lightGreen;
+
+    a {
+        color: $hunterGreen;
+        font-size: 1.5rem;
+        --bs-navbar-active-color: $hunterGreen;
+    }
+
+    a:active {
+        font-weight: bold;
+    }
+
+    button {
+        --bs-navbar-toggler-margin-y: 10px
+    }
 }
 
-a {
-    color: $hunterGreen;
-    font-size: 1.5rem;
-    --bs-navbar-active-color: $hunterGreen;
-   
-}
 
 .brand {
     font-family: $font;
     font-size: 4rem;
     color: $pastelGreen;
     text-decoration: none;
+    margin-bottom: -20px
 }
 
 .logo {
@@ -23,3 +32,4 @@ a {
     height: 6rem;
     transform: scaleX(-1);
 }
+
