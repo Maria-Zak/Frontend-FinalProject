@@ -1,6 +1,48 @@
 <app-hero></app-hero>
-<div class="mt-4 mb-5">
-    <div *ngIf="portPic" class="card mb-3" >
+<div class="mt-4 mb-5 w-100 d-flex flex-column align-items-center justify-content-center">
+    <div class="detail-pic mb-3">
+        <img src="{{ this.DS.portCatTemp[0].image }}" alt="">
+    </div>
+    <div class="pic-row overflow-scroll w-75 flex-nowrap d-flex">
+        <img *ngFor="let pic of portPics, index as index" src="{{ pic.image }}" class="row-pic" alt="..." width="150px">
+    </div>
+
+
+
+
+    <!-- <div class="details-main row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div *ngFor="let pic of portPics; index as pictId" class="col">
+            <div class="card m-3">
+                <img src="{{ pic.image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ pic.category }}</h5>
+                    <p class="card-text">{{ pic.name }}</p>
+                    <p class="card-text">{{ pic.description }}</p>
+                    <p class="card-text">{{ pic.date }}</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            {{this.DS.categoryC}}
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item active">{{this.DS.categoryC}}</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" (click)="changeCat('All');this.DS.chosenCategory('All')">All</a></li>
+          <li *ngFor="let cat of portCat"><a class="dropdown-item"(click)="changeCat(cat.name);this.DS.chosenCategory(cat.name)">{{ cat.name }}</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <!-- <div *ngIf="portPic" class="card mb-3" >
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="{{ portPic.image }}" class="img-fluid rounded-start m-1" alt="..." style="width: 100%;">
@@ -8,10 +50,9 @@
             <div class="col-md-6">
                 <div class="card-body p-2 mt-3">
                     <h5 class="card-title h4">{{ portPic.name }}</h5><br><br>
-                    <p class="card-text mb-1">{{ portPic.description }}</p><br><br><br><br>
-                    <div class="card-text border-top border-bottom border-secondary px-3 py-2">{{ portPic.date}}</div>
+                    <p class="card-text mb-1">test</p><br><br><br><br>
+                    <div class="card-text border-top border-bottom border-secondary px-3 py-2">test</div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div> -->

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { portfolioPictures } from '../portfolio';
-import { IPortfolio } from '../IPortfolio';
+import { IPortfolioC } from '../IPortfolio';
 import { ActivatedRoute, Params } from '@angular/router';
 import { DetailsService } from '../details.service';
 @Component({
@@ -9,17 +8,16 @@ import { DetailsService } from '../details.service';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  portPics: IPortfolio[] = this.DS.portPics;
-  portPic: IPortfolio = {} as IPortfolio;
-  id: number = 0;
-  
-  constructor(private route: ActivatedRoute, private DS: DetailsService) { }
+  portCat: IPortfolioC[] = this.DS.portCat;
+  picId:string = "details"
+  constructor(private route: ActivatedRoute, private DS: DetailsService)
+    { }
+
+  categoryF(categoryC:string){
+    this.DS.categoryC = categoryC;
+  }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params: Params) => {
-      this.id = +params['picId'];
-      this.portPic = this.DS.portPics[this.id];
-    });
   };
 
 }
