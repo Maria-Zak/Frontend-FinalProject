@@ -3,3 +3,21 @@
 .nav-bar {
     background-color: $lightGreen;
 }
+
+a {
+    color: $hunterGreen;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+.brand {
+    font-family: $font;
+    font-size: 4rem;
+    color: $pastelGreen
+}
+
+.logo {
+    filter: invert(95%) sepia(9%) saturate(191%) hue-rotate(9deg) brightness(93%) contrast(86%);
+    height: 6rem;
+    transform: scaleX(-1);
+}
