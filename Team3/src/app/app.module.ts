@@ -12,6 +12,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PortfolioComponent,
     TestimonialsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
