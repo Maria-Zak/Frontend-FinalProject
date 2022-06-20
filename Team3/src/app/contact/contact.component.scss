@@ -1,0 +1,21 @@
+.hero-contact {
+    background-image: url(https://cdn.pixabay.com/photo/2012/11/24/07/26/photographer-67127_1280.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+}
+
+.btn-style {
+    text-decoration: none;
+    padding: 10px 10px;
+    background: rgb(218, 215, 205);
+    margin: 10px auto;
+    color: #fff;
+    max-width: 150px;
+    transition: all 0.2s linear;
+}
+
+.btn-style:hover {
+    background: rgb(58, 90, 64);
+    color: #fff;
+}
