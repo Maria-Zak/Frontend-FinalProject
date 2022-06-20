@@ -1,6 +1,6 @@
 <h1>Portfolio</h1>
 <div class="portfolio">
-    <div class="cart-item p-3" *ngFor="let pics of portPics">
+    <div class="cart-item p-3" *ngFor="let pics of portPics; index as picId">
         <div class="card border-0" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -10,7 +10,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ pics.name }}</h5>
                         <p class="card-text">{{ pics.description }}</p>
-                        <p class="card-text">Date:{{ pics.date }}</p>
+                        <a routerLink="{{ picId }}" class="btn btn-primary">Details</a>
                     </div>
                 </div>
             </div>
