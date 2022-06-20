@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<div class="container m-5">
+    <h1>Order Form</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="name">Name</label><br>
+        <input style="width: 100%;" type="text" placeholder="Enter name" formControlName="name"><br>
+        <label for=" Address">Address</label><br>
+        <input style="width: 100%;" type="text" placeholder="Enter address" formControlName="address"><br>
+        <label for="email">Email</label><br>
+        <input style="width: 100%;" type="text" placeholder="email@example.com" formControlName="email"><br>
+        <br>
+        <input type="submit" value="Submit" class="btn btn-outline-success ">
+    </form>
+</div>
