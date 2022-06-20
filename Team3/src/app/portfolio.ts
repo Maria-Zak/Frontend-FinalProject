@@ -1,6 +1,18 @@
-export const portfolioPictues = [
+export const portfolioPictures = [
     {
-        image: "../assets/img/pProsc.jpg",
-        iName: "test"
+        image: "../assets/img/portfolio/pic.png",
+        name: "test",
+        description: "test",
+        date: "test"
+    } , {
+        image: "../assets/img/portfolio/pic.png",
+        name: "test",
+        description: "test",
+        date: "test"
+    } , {
+        image: "../assets/img/portfolio/pic.png",
+        name: "test",
+        description: "test",
+        date: "test"
     }
 ]
