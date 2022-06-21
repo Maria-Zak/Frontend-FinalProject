@@ -6,7 +6,7 @@ $darkGreen: #344E41;
 $font: 'Pacifico' cursive;
 
 
-p, h2, h3, h4, h5, li, label, input, ::placeholder {
+body, ::placeholder, figcaption {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 350;
     color: $darkGreen
