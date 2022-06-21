@@ -3,7 +3,7 @@
     color: rgb(52, 78, 65);
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 }
 
 .heading {
@@ -29,3 +29,7 @@
 .textarea {
     width: 30vw;
 }
+
+li{
+    list-style: none;
+  }

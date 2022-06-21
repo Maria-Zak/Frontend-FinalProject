@@ -1,0 +1,59 @@
+.hero-testimonials {
+    background-image: url(https://cdn.pixabay.com/photo/2014/02/02/17/41/photos-256889_1280.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    height: max-content;
+}
+
+.profile-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.testimonial-title {
+    margin: 5%;
+}

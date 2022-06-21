@@ -1,19 +1,65 @@
-<div class="hero-contact">
+<div class="hero-contact"></div>
+<h1 class="heading mt-4">Contact us</h1>
 
-</div>
-<h1 class="heading">Contact us</h1>
-<div class="container">
 
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <label for="name">Name</label><br>
-        <input class="input" type="text" placeholder="Enter name" formControlName="name"><br>
-        <label for="address">Address</label><br>
-        <input class="input" type="text" placeholder="Enter address" formControlName="address"><br>
-        <label for="email">Email</label><br>
-        <input class="input" type="text" placeholder="email@example.com" formControlName="email"><br>
-        <label for="message">Message</label>
-        <br>
-        <textarea class="textarea" name="message" cols="30" rows="5"></textarea><br>
-        <input type="submit" value="Submit" class="btn btn-style ">
+<div class="d-flex justify-content-center">
+    <form
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmit()"
+      class="mt-5 col-lg-4 col-md-4"
+    >
+      <label for="name">Name</label><br />
+      <input
+        class="input"
+        type="text"
+        placeholder="Enter name"
+        formControlName="name"
+      /><br />
+      <label for="address">Address</label><br />
+      <input
+        class="input"
+        type="text"
+        placeholder="Enter address"
+        formControlName="address"
+      /><br />
+      <label for="email">Email</label><br />
+      <input
+        class="input"
+        type="text"
+        placeholder="email@example.com"
+        formControlName="email"
+      /><br />
+      <label for="message">Message</label>
+      <br />
+      <textarea class="textarea" name="message" cols="30" rows="5"></textarea
+      ><br />
+      <input type="submit" value="Submit" class="btn btn-style" />
     </form>
+  <div
+    class="row d-flex flex-column flex-lg-row col-lg-4 col-md-4 justify-content-top m-5"
+  >
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.9322411404796!2d16.37102521585887!3d48.20792105423764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079f1adf6189%3A0x33ba5925006e3553!2sStephansplatz%204%2C%201010%20Wien!5e0!3m2!1sde!2sat!4v1655763195272!5m2!1sde!2sat"
+      width="600"
+      height="470"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <ul class="px-5 list-style2" style="font-size: 25px">
+      <li style="text-decoration: underline">Location:</li>
+      <li>Stephansplatz 4, 1001 Wien</li>
+
+      <li class="mt-5" style="text-decoration: underline">Office hours:</li>
+      <li>Monday 08:00 - 18:00</li>   
+      <li>Wednesday 08:00 - 18:00</li>
+      <li>Thursday 08:00 - 18:00</li>
+      
+      
+    </ul>
+
+    
+  </div>
 </div>
