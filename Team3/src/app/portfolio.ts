@@ -1,28 +1,28 @@
 export const portfolioCategories = [
     {
         name: "WEDDINGS",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/wedding_1.jpg"
     } , {
         name: "VACATION",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/vacation_1.jpg"
     } , {
         name: "FINE ART",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/fine_art_1.jpg"
     } , {
         name: "MATERNITY",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/maternity_1.jpg"
     } , {
         name: "HEADSHOTS",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/headshots_2.jpg"
     } , {
         name: "PORTRAIT",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/portraits_2.jpg"
     } , {
         name: "BOUDOIR",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/boudoir_1.jpg"
     } , {
         name: "POLEDANCE",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/poledance.jpg"
     } , {
         name: "WORKSHOPS",
         image: "../assets/img/portfolio/pic.png"
