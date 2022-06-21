@@ -1,5 +1,8 @@
 .detail-pic {
-    width: 75%
+    width: 75%;
+    .d-pic {
+        max-height: 765px;
+    }
 }
 .pic-row {
     height: 10vh;
