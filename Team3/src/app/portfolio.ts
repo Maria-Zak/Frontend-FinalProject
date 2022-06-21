@@ -25,7 +25,7 @@ export const portfolioCategories = [
         image: "../assets/img/portfolio/poledance.jpg"
     } , {
         name: "WORKSHOPS",
-        image: "../assets/img/portfolio/pic.png"
+        image: "../assets/img/portfolio/workshop_1.jpg"
     }
 ]
 export const portfolioPictures = [
