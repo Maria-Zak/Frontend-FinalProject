@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { IPortfolioC, IPortfolioPic } from '../IPortfolio';
 import { DetailsService } from '../details.service';
-import { portfolioPictures, portfolioCategories } from '../portfolio';
 
 @Component({
   selector: 'app-details',
@@ -27,5 +26,18 @@ export class DetailsComponent implements OnInit {
   }
   changePic(picNumber:number) {
     this.index = picNumber;
+  }
+  indexPlus(){
+    this.index++;
+    if (this.index == this.portPics.length){
+      this.index = 0;
+    }
+  }
+  indexMinus(){
+    if (this.index < 1){
+      this.index = this.portPics.length - 1
+    } else {
+      this.index--;
+    }
   }
 }
