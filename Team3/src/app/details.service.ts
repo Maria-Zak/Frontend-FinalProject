@@ -23,6 +23,5 @@ export class DetailsService {
         this.portCatTemp.push(cat)
       }
     }
-    console.log(this.portCatTemp)
   }
 }
