@@ -206,7 +206,7 @@ export const portfolioPictures = [
     } , {
         category: "WORKSHOPS",
         name: "test0 name ",
-        image: "../assets/img/portfolio/pic.png",
+        image: "../assets/img/portfolio/workshop_1.jpg",
         description: "test0 descr",
         date: "test0 date"
     }
