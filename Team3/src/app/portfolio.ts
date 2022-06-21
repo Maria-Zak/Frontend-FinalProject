@@ -38,7 +38,7 @@ export const portfolioPictures = [
     } , {
         category: "WEDDINGS",
         name: "test1 name",
-        image: "../assets/img/portfolio/pic.png",
+        image: "../assets/img/portfolio/pic1.png",
         description: "test1 descr",
         date: "test1 date"
     } , {
@@ -56,7 +56,7 @@ export const portfolioPictures = [
     } , {
         category: "VACATION",
         name: "test1 name ",
-        image: "../assets/img/portfolio/pic.png",
+        image: "../assets/img/portfolio/pic1.png",
         description: "test1 descr",
         date: "test1 date"
     } , {
