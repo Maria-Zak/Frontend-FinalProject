@@ -50,25 +50,25 @@ export const portfolioPictures = [
     } , {
         category: "VACATION",
         name: "test0 name ",
-        image: "../assets/img/portfolio/pic.png",
+        image: "../assets/img/portfolio/pic1.png",
         description: "test0 descr",
         date: "test0 date"
     } , {
         category: "VACATION",
         name: "test1 name ",
-        image: "../assets/img/portfolio/pic1.png",
+        image: "../assets/img/portfolio/pic2.png",
         description: "test1 descr",
         date: "test1 date"
     } , {
         category: "VACATION",
         name: "test2 name ",
-        image: "../assets/img/portfolio/pic2.png",
+        image: "../assets/img/portfolio/pic.png",
         description: "test2 descr",
         date: "test2 date"
     } , {
         category: "FINE ART",
         name: "test0 name ",
-        image: "../assets/img/portfolio/pic.png",
+        image: "../assets/img/portfolio/pic2.png",
         description: "test0 descr",
         date: "test0 date"
     }

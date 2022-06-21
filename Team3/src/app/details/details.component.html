@@ -6,23 +6,6 @@
     <div class="pic-row overflow-auto flex-nowrap d-flex mb-3">
         <img *ngFor="let pic of portPics, let i = index" src="{{ pic.image }}" (click)="changePic(i)" class="row-pic rounded-1" alt="..." height="100%">
     </div>
-
-
-
-
-    <!-- <div class="details-main row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <div *ngFor="let pic of portPics; index as pictId" class="col">
-            <div class="card m-3">
-                <img src="{{ pic.image }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{ pic.category }}</h5>
-                    <p class="card-text">{{ pic.name }}</p>
-                    <p class="card-text">{{ pic.description }}</p>
-                    <p class="card-text">{{ pic.date }}</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
             {{this.DS.categoryC}}
