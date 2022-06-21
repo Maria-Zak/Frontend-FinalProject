@@ -1,10 +1,10 @@
 <app-hero></app-hero>
 <div class="mt-4 mb-5 w-100 d-flex flex-column align-items-center justify-content-between">
     <div class="detail-pic mb-3 shadow">
-        <img src="{{ this.DS.portCatTemp[0].image }}" alt="" width="100%">
+        <img src="{{ this.DS.portCatTemp[this.index].image }}" alt="" width="100%" class="rounded-2">
     </div>
     <div class="pic-row overflow-auto flex-nowrap d-flex mb-3">
-        <img *ngFor="let pic of portPics, index as index" src="{{ pic.image }}" class="row-pic" alt="..." height="100%">
+        <img *ngFor="let pic of portPics, let i = index" src="{{ pic.image }}" (click)="changePic(i)" class="row-pic rounded-1" alt="..." height="100%">
     </div>
 
 
