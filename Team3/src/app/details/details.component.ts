@@ -23,6 +23,7 @@ export class DetailsComponent implements OnInit {
   }
   changeCat(aCategory:string) {
     this.DS.categoryC = aCategory;
+    this.index = 0;
   }
   changePic(picNumber:number) {
     this.index = picNumber;
