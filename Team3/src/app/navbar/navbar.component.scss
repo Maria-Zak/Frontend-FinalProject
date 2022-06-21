@@ -21,15 +21,16 @@ nav {
 
 .brand {
     font-family: $font;
-    font-size: 4rem;
+    font-size: 3rem;
     color: $pastelGreen;
     text-decoration: none;
-    margin-bottom: -20px
+    margin-bottom: -15px
 }
 
 .logo {
     filter: invert(95%) sepia(9%) saturate(191%) hue-rotate(9deg) brightness(93%) contrast(86%);
-    height: 6rem;
+    height: 4rem;
     transform: scaleX(-1);
+    padding-bottom: 8px
 }
 
