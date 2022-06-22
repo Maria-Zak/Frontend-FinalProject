@@ -19,18 +19,50 @@ nav {
 }
 
 
-.brand {
-    font-family: $font;
-    font-size: 3rem;
-    color: $pastelGreen;
-    text-decoration: none;
-    margin-bottom: -15px
+// .brand {
+//     font-family: $font;
+//     font-size: 3rem;
+//     color: $pastelGreen;
+//     text-decoration: none;
+//     margin-bottom: -15px
+// }
+
+// .logo {
+//     filter: invert(95%) sepia(9%) saturate(191%) hue-rotate(9deg) brightness(93%) contrast(86%);
+//     height: 4rem;
+//     transform: scaleX(-1);
+//     padding-bottom: 8px
+// }
+
+.logo-box {
+    width: 300px;
+    height: 90px;
+    position: relative;
+    cursor: pointer
+    
+}
+.logo-pic {
+    height: 60px;
+    margin-bottom: 49px;
+    margin-left: 6px;
+    position: absolute; 
+    filter: opacity(0.5) drop-shadow(0 0 0 $hunterGreen);
 }
 
-.logo {
-    filter: invert(95%) sepia(9%) saturate(191%) hue-rotate(9deg) brightness(93%) contrast(86%);
-    height: 4rem;
-    transform: scaleX(-1);
-    padding-bottom: 8px
+.logo-text {
+    font-family: 'Caveat', cursive;
+    font-size: 55px;
+    position: absolute
+    
 }
 
+.name-end {
+    margin-left: 49px;
+}
+
+.tagline {
+    position: absolute;
+    top: 62px;
+    font-size: 13px;
+    font-weight: 400
+}
