@@ -4,6 +4,7 @@
         <img src="{{ this.DS.portCatTemp[this.index].image }}" alt="" width="100%" class="card-img rounded-2 d-pic"/>
         <div class="card-img-overlay align-items-center d-flex justify-content-between">
             <i (click)="indexMinus()" class="bi bi-arrow-left-circle mx-2" style="font-size: 45px; cursor: pointer"></i>
+            <div (click)="fullScreenOn()" class="full-screen-clicker" ></div>
             <i (click)="indexPlus()" class="bi bi-arrow-right-circle mx-2" style="font-size: 45px; cursor: pointer"></i>
         </div>
     </div>
@@ -37,3 +38,9 @@
         </ul>
     </div>
 </div>
+
+<ng-template [ngIf]="this.fullScreen == true">
+    <div class="fullscreen">
+        <img src="{{ this.DS.portCatTemp[this.index].image }}" (click)="fullScreenOff()" alt="" width="98%" class="card-img rounded-2 d-pic"/>
+    </div>
+</ng-template>

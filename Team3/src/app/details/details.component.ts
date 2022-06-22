@@ -12,6 +12,8 @@ export class DetailsComponent implements OnInit {
   portCat: IPortfolioC[] = this.DS.portCat
   portPics: IPortfolioPic[] = this.DS.portCatTemp;
   index: number = 0;
+  fullScreen: boolean = false;
+  fullSOn: boolean = false;
   constructor(private route: ActivatedRoute, public DS: DetailsService) { }
 
   ngOnInit(): void {
@@ -19,6 +21,7 @@ export class DetailsComponent implements OnInit {
   }
   ngDoCheck(): void {
     this.portPics = this.DS.portCatTemp
+    this.fullScreen = this.fullSOn
   }
   changeCat(aCategory:string) {
     this.DS.categoryC = aCategory;
@@ -39,5 +42,11 @@ export class DetailsComponent implements OnInit {
     } else {
       this.index--;
     }
+  }
+  fullScreenOn(){
+    this.fullSOn = true;
+  }
+  fullScreenOff(){
+    this.fullSOn = false;
   }
 }
