@@ -4,9 +4,9 @@ $fernGreen: #588157;
 $hunterGreen: #3A5A40;
 $darkGreen: #344E41;
 $font: 'Pacifico' cursive;
-
-
-body, ::placeholder, figcaption {
+body,
+ ::placeholder,
+figcaption {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 350;
     color: $darkGreen
@@ -32,3 +32,8 @@ body, ::placeholder, figcaption {
     background: $darkGreen;
     color: #fff;
 }
+
+// .swiper {
+//     width: 600px;
+//     height: 300px;
+// }
