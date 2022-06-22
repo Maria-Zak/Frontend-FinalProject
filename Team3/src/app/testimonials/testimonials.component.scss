@@ -1,35 +1,26 @@
 .hero-testimonials {
-    background-image: url(https://cdn.pixabay.com/photo/2014/02/02/17/41/photos-256889_1280.jpg);
+    background-image: url(/assets/img/fotographer/hero_testimonials.jpg);
     background-size: cover;
     height: 70vh;
     background-position: center;
 }
 
-.profile-img {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-@media only screen and (max-width: 480px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width:800px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
+// .container {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+// }
+// @media only screen and (max-width: 480px) {
+//     .container {
+//         display: grid;
+//         grid-template-columns: 1fr;
+//     }
+// }
+// @media only screen and (min-width: 481px) and (max-width:800px) {
+//     .container {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
 .testimonial {
     display: flex;
     flex-direction: column;
@@ -44,6 +35,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 .testimonial-body {
@@ -56,4 +50,35 @@
 
 .testimonial-title {
     margin: 5%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    // width: 100%;
+    // height: 100%;
+    object-fit: cover;
 }
