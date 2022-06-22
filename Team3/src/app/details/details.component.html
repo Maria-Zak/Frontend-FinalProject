@@ -40,7 +40,7 @@
 </div>
 
 <ng-template [ngIf]="this.fullScreen == true">
-    <div class="fullscreen">
+    <div class="fullscreen sticky-top">
         <img src="{{ this.DS.portCatTemp[this.index].image }}" (click)="fullScreenOff()" alt="" width="98%" class="card-img rounded-2 d-pic"/>
     </div>
 </ng-template>
