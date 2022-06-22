@@ -1,3 +1,5 @@
+@import "../../styles";
+
 .detail-pic {
     width: 75%;
 }
@@ -17,4 +19,12 @@
     width: 90%;
     height: 100%;
     cursor: pointer;
+}
+.btn-cstm{
+    cursor: pointer;
+    background-color: $fernGreen;
+}
+.bg-cstm{
+    cursor: pointer;
+    background-color: $lightGreen;
 }

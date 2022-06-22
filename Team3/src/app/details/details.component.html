@@ -15,13 +15,13 @@
         <img *ngFor="let pic of portPics; let i = index" src="{{ pic.image }}" (click)="changePic(i)" class="row-pic" alt="..." height="100%" />
     </div>
     <div class="dropdown mb-3">
-        <button class="btn btn-secondary dropdown-toggle px-5" type="button" id="dropdownMenuButton2"
+        <button class="btn btn-cstm text-light dropdown-toggle px-5" type="button" id="dropdownMenuButton2"
             data-bs-toggle="dropdown" aria-expanded="false">
             {{ this.DS.categoryC }} ({{ this.portPics.length }})
         </button>
-        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+        <ul class="dropdown-menu bg-cstm" aria-labelledby="dropdownMenuButton2">
             <li>
-                <a class="dropdown-item active">{{ this.DS.categoryC }}</a>
+                <a class="dropdown-item">{{ this.DS.categoryC }}</a>
             </li>
             <li>
                 <hr class="dropdown-divider">
@@ -29,7 +29,7 @@
             <li>
                 <a class="dropdown-item" (click)="changeCat('All'); this.DS.chosenCategory('All')">All</a>
             </li>
-            <li *ngFor="let cat of portCat">
+            <li *ngFor="let cat of portCat ">
                 <a class="dropdown-item" (click)="changeCat(cat.name); this.DS.chosenCategory(cat.name)">{{ cat.name }}</a>
             </li>
         </ul>
