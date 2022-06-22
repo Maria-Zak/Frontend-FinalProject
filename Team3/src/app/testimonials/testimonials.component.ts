@@ -11,7 +11,7 @@ export class TestimonialsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       slidesPerGroup: 1,
@@ -39,6 +39,14 @@ export class TestimonialsComponent implements OnInit {
           delay: 5000
       },
       keyboard: true
+  });
+  let swiper2 = new Swiper(".mySwiper2", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    keyboard: true
   });
   }
 
