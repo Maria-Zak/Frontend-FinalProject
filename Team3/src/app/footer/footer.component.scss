@@ -12,3 +12,13 @@
 i {
     font-size: 30px
 }
+
+.social {
+    gap: 3rem
+}
+
+@media screen and (max-width: 480px) {
+    .social {
+        gap: 10px
+    }
+}

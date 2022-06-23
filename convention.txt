@@ -1,0 +1,10 @@
+Project Rules
+Variables with camelCase
+Use – for classes
+Use _ (underscore) for IDs
+Don’t use VAR
+Function names – what the function does
+Component names-short as possible(home,about) we keep app-
+
+We meet every day at 9:00 in class and briefing at the end of the day.
+We have lunch at 12.
