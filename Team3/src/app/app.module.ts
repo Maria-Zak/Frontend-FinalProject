@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DetailsComponent } from './details/details.component';
 import { SwiperModule } from 'swiper/angular'
+import {HashLocationStrategy,Location,LocationStrategy} from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { SwiperModule } from 'swiper/angular'
     ReactiveFormsModule,
     SwiperModule
   ],
-  providers: [],
+  providers: [Location, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
