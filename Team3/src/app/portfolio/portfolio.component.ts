@@ -15,6 +15,7 @@ export class PortfolioComponent implements OnInit {
 
   categoryF(categoryC:string){
     this.DS.categoryC = categoryC;
+    localStorage.setItem("chosenCategory", this.DS.categoryC)
   }
 
   ngOnInit(): void {

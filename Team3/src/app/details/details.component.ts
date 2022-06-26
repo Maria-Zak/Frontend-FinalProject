@@ -17,6 +17,7 @@ export class DetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, public DS: DetailsService) { }
 
   ngOnInit(): void {
+    this.DS.categoryC = localStorage.getItem("chosenCategory")
     this.DS.chosenCategory(this.DS.categoryC)
   }
   ngDoCheck(): void {
@@ -26,6 +27,7 @@ export class DetailsComponent implements OnInit {
   changeCat(aCategory:string) {
     this.DS.categoryC = aCategory;
     this.index = 0;
+    localStorage.setItem("chosenCategory", this.DS.categoryC)
   }
   changePic(picNumber:number) {
     this.index = picNumber;
