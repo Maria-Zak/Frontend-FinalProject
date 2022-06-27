@@ -52,7 +52,8 @@ iframe {
 @media screen and (max-width: 480px) {
     iframe {
         width: 100%;
-        height: 470px
+        height: 470px;
+        margin-bottom: 20px;
     }
     .hours {
         width: 100%;
@@ -63,7 +64,8 @@ iframe {
 @media screen and (min-width: 480px) and (max-width:720px) {
     iframe {
         width: 100%;
-        height: 470px
+        height: 470px;
+        margin-bottom: 20px;
     }
     .hours {
         width: 100%;

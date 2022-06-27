@@ -18,6 +18,7 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.DS.categoryC = localStorage.getItem("chosenCategory")
+    this.index=Number(localStorage.getItem("pictureIndex"))
     this.DS.chosenCategory(this.DS.categoryC)
   }
   ngDoCheck(): void {
@@ -28,15 +29,18 @@ export class DetailsComponent implements OnInit {
     this.DS.categoryC = aCategory;
     this.index = 0;
     localStorage.setItem("chosenCategory", this.DS.categoryC)
+    localStorage.setItem("pictureIndex", this.index.toString())
   }
   changePic(picNumber:number) {
     this.index = picNumber;
+    localStorage.setItem("pictureIndex", this.index.toString())
   }
   indexPlus(){
     this.index++;
     if (this.index == this.portPics.length){
       this.index = 0;
     }
+    localStorage.setItem("pictureIndex", this.index.toString())
   }
   indexMinus(){
     if (this.index < 1){
@@ -44,6 +48,7 @@ export class DetailsComponent implements OnInit {
     } else {
       this.index--;
     }
+    localStorage.setItem("pictureIndex", this.index.toString())
   }
   fullScreenOn(){
     this.fullSOn = true;
