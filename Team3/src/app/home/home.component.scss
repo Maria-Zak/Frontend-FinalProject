@@ -1,10 +1,17 @@
 @import "../../styles";
-
 section {
     background-color: $pastelGreen;
-
     img {
-        width: 300px;
+        width: 18rem;
         box-shadow: -50px -50px 0 -40px $fernGreen, 50px 50px 0 -40px $fernGreen;
+    }
+}
+
+@media screen and (max-width:480px) {
+    section {
+        img {
+            width: 15rem;
+            box-shadow: -50px -50px 0 -40px $fernGreen, 50px 50px 0 -40px $fernGreen;
+        }
     }
 }
