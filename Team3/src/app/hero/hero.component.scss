@@ -1,6 +1,5 @@
 @import "../../styles.scss";
-
-.carousel-ouside, 
+.carousel-ouside,
 .carousel-inside,
 .carousel-btns,
 .carousel img {
@@ -8,8 +7,14 @@
     max-height: 60vh;
 }
 
+@media screen and (max-width:480px) {
+    .carousel-btns {
+        width: 20%;
+    }
+}
+
 .carousel-outside {
-    .nav-btn{
+    .nav-btn {
         font-size: 60px;
         // text-shadow: 5px 5px 5px black;
         -webkit-text-stroke: 2px rgba(black, 0.1);
@@ -34,8 +39,5 @@
             width: fit-content;
             height: fit-content
         }
-        
     }
-    
 }
-
