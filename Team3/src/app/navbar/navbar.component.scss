@@ -1,18 +1,14 @@
 @import "../../styles";
-
 nav {
     background-color: $lightGreen;
-
     a {
         color: $hunterGreen;
         font-size: 1.5rem;
         --bs-navbar-active-color: $hunterGreen;
     }
-
     a:active {
         font-weight: bold;
     }
-
     button {
         --bs-navbar-toggler-margin-y: 10px
     }
@@ -23,13 +19,13 @@ nav {
     height: 90px;
     position: relative;
     cursor: pointer
-    
 }
+
 .logo-pic {
     height: 60px;
     margin-bottom: 49px;
     margin-left: 6px;
-    position: absolute; 
+    position: absolute;
     filter: opacity(0.5) drop-shadow(0 0 0 $hunterGreen);
 }
 
@@ -48,4 +44,32 @@ nav {
     top: 62px;
     font-size: 13px;
     font-weight: 400
+}
+
+@media screen and (max-width:480px) {
+    .logo-box {
+        width: 200px;
+        height: 90px;
+        position: relative;
+        cursor: pointer
+    }
+    .logo-text {
+        font-family: 'Caveat', cursive;
+        font-size: 33px;
+        position: absolute
+    }
+    .logo-pic {
+        height: 50px;
+        margin-bottom: 49px;
+        margin-left: 6px;
+        position: absolute;
+        filter: opacity(0.5) drop-shadow(0 0 0 $hunterGreen);
+    }
+    .name-end {
+        margin-left: 40px;
+    }
+    nav button {
+        --bs-navbar-toggler-margin-y: 10px;
+        margin-top: 10px;
+    }
 }
